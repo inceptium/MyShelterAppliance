@@ -9,7 +9,7 @@ RESTARTCOUNT=0
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
     #java -Xms128m -Xmx256m  -XX:+UseLinuxPosixThreadCPUClocks -agentpath:/root/profiling/lib/deployed/jdk16/linux-amd64/libprofilerinterface.so=/root/profiling/lib,5140  -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*:/root/IncStorage/InceptiumAppStore/*" inceptiumserver.core.server.IncServer noswing updatedatabase
-        java -Xms128m -Xmx512m -cp "MyShelter.jar:/root/MyShelterAppliance/MyShelter/lib/*" letocrono.Main noswing $MEDIAPATH $BASEDATI /root/MyShelterAppliance/MyShelter/CustomLib eth0 >> $LOGFILE 2>&1
+        java -Xms128m -Xmx512m -cp "MyShelter.jar:/root/MyShelterAppliance/MyShelter/lib/*" myshelter.Main noswing $MEDIAPATH $BASEDATI /root/MyShelterAppliance/MyShelter/CustomLib eth0 >> $LOGFILE 2>&1
         MSG=$?
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
         echo "MSG: $MSG" >> $LOGFILE
