@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /root/MyShelterAppliance/MyShelter/
 INCEPTIUM_ACTIVE=1
-LOGFILE=/root/MyShelterAppliance/MyShelter/myshelter_srv.log
+LOGFILE=/root/BaseDati/myshelter_srv.log
 MEDIAPATH=/root/BaseDati/srv/LCServer
 BASEDATI=/root/BaseDati
 MSG=0
