@@ -4,6 +4,7 @@ INCEPTIUM_ACTIVE=1
 LOGFILE=/root/BaseDati/myshelter_srv.log
 MEDIAPATH=/root/BaseDati/srv/LCServer
 BASEDATI=/root/BaseDati
+SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
 RESTARTCOUNT=0
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
