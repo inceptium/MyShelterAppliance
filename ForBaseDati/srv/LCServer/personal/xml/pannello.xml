@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : pannello.xml
+    Created on : 28 settembre 2011, 11.07
+    Author     : antoniocaputo
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <pannello id="1" avviso="1" etichetta="Ingresso" icona="./media/icona.ico">
+        
+        <central_area img="immagini/fondo.png" >
+        <frame id="111" left="80" top="10" width="620" height="500">./video/pagina_ingresso.html</frame>
+        </central_area>
+        
+        <right_area>
+            <elemento id="884" type="3" status="0" currentvalue="0" title="Apri Portone" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+            <elemento id="883" type="3" status="0" currentvalue="0" title="Apri Fac" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+            <elemento id="901" type="3" status="0" currentvalue="0" title="Porta Carol" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+            <elemento id="899" type="3" status="0" currentvalue="0" title="Porta Reception" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+            <elemento id="900" type="3" status="0" currentvalue="0" title="Porta Francesco" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+            <elemento id="1142" type="3" status="0" currentvalue="0" title="Apri Portone+Carol" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+
+        </right_area>
+        
+        <down_area>
+       
+                 
+        </down_area>
+        
+    </pannello>
+    <pannello id="2" avviso="1" etichetta="Ingresso" icona="./media/icona.ico">
+        
+        <central_area img="immagini/fondo.png" >
+        <frame id="111" left="10" top="10" width="700" height="500">./video/pagina_all.html</frame>
+        </central_area>
+        
+        <right_area>
+        
+            <elemento id="884" type="3" status="0" currentvalue="0" title="Apri Portone" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+            <elemento id="883" type="3" status="0" currentvalue="0" title="Apri Fac" label_value="mV" id_group="889" currenttextvalue="" des_group="Accessi"/>
+          
+        </right_area>
+        
+        <down_area>
+       
+                 
+        </down_area>
+        
+    </pannello>
+
+    <pannello id="3" avviso="1" etichetta="Luci/Prese" icona="./media/icona.ico">
+        
+        <central_area img="immagini/fondo.png" >
+            <frame id="111" left="80" top="10" width="620" height="500">./video/pagina_carol.html</frame>
+        </central_area>
+        
+        <right_area>
+            <elemento id="891" type="6" status="0" currentvalue="0" title="Accendi Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="892" type="6" status="0" currentvalue="0" title="Spegni Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="880" type="8" status="0" currentvalue="0" title="Laboratorio" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="882" type="8" status="0" currentvalue="0" title="Segreteria" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="879" type="8" status="0" currentvalue="0" title="Luce Sviluppo" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="881" type="8" status="0" currentvalue="0" title="Prese Comandate" label_value="mV" id_group="890" currenttextvalue="" des_group="Prese"/>
+        </right_area>
+        
+        <down_area>
+       
+                 
+        </down_area>
+        
+    </pannello>
+    
+    <pannello id="4" avviso="1" etichetta="Antifurto" icona="./media/icona.ico">
+        
+        <central_area img="immagini/fondo.png" >
+        <menu id='50' etichetta='prova' top='130' left='10' imgA='img/SoloPulsanteMenu.png'>
+            <elemento id="1016" type="3" status="0" currentvalue="0" title="Azzera Monitor" label_value="mV" id_group="975" currenttextvalue="" des_group="Antifurto Carol"/>
+        </menu>
+        <text_box id="3333" left="10" top="20" width="50" height="50" opaco='1' colore_sfondo='white' bordo="groove" immagine_sfondo='img/fondo.jpg' >
+            <elemento id="982" type="9" status="0" currentvalue="0" title="Monitor Antifurto" label_value="mV" id_group="975" currenttextvalue="" des_group="Antifurto Carol"/>
+        </text_box>
+        
+ 
+        </central_area>
+        
+        <right_area>
+           <elemento id="981" type="3" status="0" currentvalue="0" title="Inserisci Carol" label_value="mV" id_group="975" currenttextvalue="" des_group="Antifurto Carol"/>
+            <elemento id="1030" type="3" status="0" currentvalue="0" title="Inserisci Carmine" label_value="mV" id_group="1029" currenttextvalue="" des_group="Antifurto Carmine"/>
+            <elemento id="1064" type="3" status="0" currentvalue="0" title="Inserisci Area Comune" label_value="mV" id_group="1063" currenttextvalue="" des_group="Antifurto Zona Comune"/>
+            
+            <elemento id="1134" type="3" status="0" currentvalue="0" title="Annulla tutti gli allarmi Audio" label_value="mV" id_group="975" currenttextvalue="" des_group="Antifurto Carol"/>
+            
+
+           
+           
+        </right_area>
+        
+        <down_area>
+       
+                 
+        </down_area>
+        
+    </pannello>
+
+    
+    </root>

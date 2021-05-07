@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : pannello.xml
+    Created on : 02.01.2012 16:55
+    Author     : Chiara Leonelli
+    Description:
+        Purpose of the document follows.
+-->
+<!--
+<pannello id="1" etichetta="home"> (l'id deve corrispondere allo stesso id nel file web_design, l'etichetta è il nome visualizzato)
+   
+   <central_area img=""> (in img può andare l'immagine di sfondo)
+   </central_area>
+   
+   <right_area>
+   </right_area>
+   
+   <down_area>
+   </down_area>
+   
+</pannello>
+
+elementi che si possono inserire:
+
+pulsante(right_area):
+<elemento id="891" type="6" status="0" currentvalue="0" title="Accendi Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/> 
+
+pulsante(central_area):
+<button id='321' left='50' top='50'>
+  <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>    
+</button>
+
+text box(central_area):       
+<text_box id="3333" left="10" top="300" width="50" height="50" opaco='1' colore_sfondo='orange' bordo="groove" immagine_sfondo='img/sfondo2.jpg' ></text_box>
+
+menu(central_area,down_area):
+<menu id='5' etichetta='prova' top='230' left='50' imgA='img/SoloPulsanteMenu.png'>
+   <elemento id="891" type="6" status="0" currentvalue="0" title="Accendi Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/> 
+</menu>
+
+frame(central_area):
+<frame id='321321' left='222' top='321' width='321' height='321'>contenuto.html</frame>
+
+-->
+<root>
+    <pannello id="1" avviso="1" etichetta="Ingresso" icona="./media/icona.ico">
+        
+        <central_area img="immagini/ProgettoCasaAlto1.jpg" >
+            <menu id='5' etichetta='prova' top='230' left='50' imgA='img/SoloPulsanteMenu.png'>
+                <elemento id="891" type="6" status="0" currentvalue="0" title="Accendi Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/> 
+                <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+                <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+                <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+                <elemento id="818" type="3" status="0" currentvalue="0" title="int 3" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            </menu>      
+        </central_area>
+        
+        <right_area>
+            <elemento id="800" type="3" status="0" currentvalue="0" title="Rel1" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="801" type="6" status="0" currentvalue="0" title="Rel2" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="802" type="3" status="0" currentvalue="0" title="LuceBagno" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="803" type="6" status="0" currentvalue="0" title="LuceScale" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="804" type="3" status="1" currentvalue="0" title="Accendi tutto" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="808" type="5" status="0" currentvalue="0" title="Ingresso 2" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="809" type="5" status="0" currentvalue="0" title="Ingresso 3" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="811" type="5" status="0" currentvalue="0" title="Monitoraggio ing 2" label_value="mV" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="814" type="7" status="1" currentvalue="0" title="temperatura2" label_value="gr" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="830" type="8" status="0" currentvalue="0" title="pulsante auto" label_value="null" id_group="799" currenttextvalue="" des_group="Prove"/>
+            <elemento id="833" type="10" status="0" currentvalue="0" title="send message" label_value="null" id_group="799" currenttextvalue="" des_group="Prove"/>
+        </right_area>
+        
+        <down_area>
+            <menu id='3' etichetta='prova' left='50'>
+                <elemento id="891" type="6" status="0" currentvalue="0" title="Accendi Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/> 
+            </menu>
+        </down_area>
+        
+    </pannello>
+    <pannello id="2" avviso="1" etichetta="Ingresso" icona="./media/icona.ico">
+        
+        <central_area img="" >
+            <frame id="111" left="10" top="10" width="700" height="500">./video/pagina_all.html</frame>
+        </central_area>
+        
+        <right_area>
+        
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="818" type="3" status="0" currentvalue="0" title="int 3" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="818" type="3" status="0" currentvalue="0" title="int 3" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="816" type="3" status="0" currentvalue="0" title="prova pulsante id" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+            <elemento id="818" type="3" status="0" currentvalue="0" title="int 3" label_value="mV" id_group="0" currenttextvalue="" des_group="Home"/>
+          
+        </right_area>
+        
+        <down_area>
+       
+                 
+        </down_area>
+        
+    </pannello>
+
+    <pannello id="3" avviso="1" etichetta="Luci/Prese" icona="./media/icona.ico">
+        
+        <central_area img="" >
+            <frame id="111" left="80" top="10" width="620" height="500">./video/pagina_carol.html</frame>
+        </central_area>
+        
+        <right_area>
+            <elemento id="891" type="6" status="0" currentvalue="0" title="Accendi Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci" messaggio_allarme='prova messaggio'/>
+            <elemento id="892" type="6" status="0" currentvalue="0" title="Spegni Tutto" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="880" type="8" status="0" currentvalue="0" title="Laboratorio" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="882" type="8" status="0" currentvalue="0" title="Segreteria" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="879" type="8" status="0" currentvalue="0" title="Luce Sviluppo" label_value="mV" id_group="888" currenttextvalue="" des_group="Luci"/>
+            <elemento id="881" type="8" status="0" currentvalue="0" title="Prese Comandate" label_value="mV" id_group="890" currenttextvalue="" des_group="Prese"/>
+        </right_area>
+        
+        <down_area>
+       
+                 
+        </down_area>
+        
+    </pannello>
+    
+    <pannello id="4" avviso="1" etichetta="Antifurto" icona="./media/icona.ico">
+        
+        <central_area img="" >
+
+        </central_area>
+        
+        <right_area>
+            <elemento id="981" type="3" status="0" currentvalue="0" title="Inserisci Carol" label_value="mV" id_group="975" currenttextvalue="" des_group="Antifurto Carol"/>
+            <elemento id="1030" type="3" status="0" currentvalue="0" title="Inserisci Carmine" label_value="mV" id_group="1029" currenttextvalue="" des_group="Antifurto Carmine"/>
+            <elemento id="1064" type="3" status="0" currentvalue="0" title="Inserisci Area Comune" label_value="mV" id_group="1063" currenttextvalue="" des_group="Antifurto Zona Comune"/>
+
+           
+           
+        </right_area>
+        
+        <down_area>
+       
+                 
+        </down_area>
+        
+    </pannello>
+
+    
+</root>
