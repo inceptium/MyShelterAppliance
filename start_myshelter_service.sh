@@ -1,4 +1,6 @@
 #!/bin/bash
+cd /root/BaseDati
+rm myshelter_srv.log
 cd /root/MyShelterAppliance/MyShelter/
 INCEPTIUM_ACTIVE=1
 LOGFILE=/root/BaseDati/myshelter_srv.log
