@@ -7,7 +7,7 @@ MSG=0
 RESTARTCOUNT=0
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
-        java -Xms128m -Xmx512m -jar inceptiumdiscovery.jar $SERIALNO >> $LOGFILE
+        java -Xms128m -Xmx256m -jar inceptiumdiscovery.jar $SERIALNO >> $LOGFILE
 	MSG=$?
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
         echo "MSG: $MSG" >> $LOGFILE
