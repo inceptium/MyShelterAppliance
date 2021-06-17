@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /root/MyShelterAppliance/InceptiumDiscovery/
 INCEPTIUM_ACTIVE=1
-LOGFILE=/root/BaseDati/myshelter_srv.log
+LOGFILE=/root/BaseDati/myshelter_discover.log
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
 RESTARTCOUNT=0
