@@ -5,9 +5,10 @@ LOGFILE=/root/BaseDati/myshelter_discover.log
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
 RESTARTCOUNT=0
+ip=$(hostname -I | awk '{print $1}')
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
-        java -Xms128m -Xmx256m -jar inceptiumdiscovery.jar $SERIALNO >> $LOGFILE
+        java -Xms128m -Xmx256m -jar inceptiumdiscovery.jar $SERIALNO $ip >> $LOGFILE
 	MSG=$?
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
         echo "MSG: $MSG" >> $LOGFILE
