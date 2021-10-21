@@ -1,6 +1,5 @@
 #!/bin/bash
 LOGFILE=/root/BaseDati/myshelter_discover.log
-/root/./reset_head_from_git.sh >> $LOGFILE
 cd /root/MyShelterAppliance/InceptiumDiscovery/
 INCEPTIUM_ACTIVE=1
 LOGFILE=/root/BaseDati/myshelter_discover.log
