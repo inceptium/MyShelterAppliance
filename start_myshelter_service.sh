@@ -7,7 +7,7 @@ cd /root/BaseDati
 rm myshelter_srv.log
 cd /root
 echo "update myshelter" >> $LOGFILE
-./reset_head_from_git.sh
+./reset_head_from_git.sh >> $LOGFILE
 cd /root/MyShelterAppliance/MyShelter/
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
