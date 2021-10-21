@@ -5,7 +5,6 @@ MEDIAPATH=/root/BaseDati/srv/LCServer
 BASEDATI=/root/BaseDati
 cd /root/BaseDati
 rm myshelter_srv.log
-exec /root/reset_head_from_git.sh >> $LOGFILE
 cd /root/MyShelterAppliance/MyShelter/
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
