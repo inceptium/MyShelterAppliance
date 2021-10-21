@@ -15,6 +15,7 @@ do
     #java -Xms128m -Xmx256m  -XX:+UseLinuxPosixThreadCPUClocks -agentpath:/root/profiling/lib/deployed/jdk16/linux-amd64/libprofilerinterface.so=/root/profiling/lib,5140  -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*:/root/IncStorage/InceptiumAppStore/*" inceptiumserver.core.server.IncServer noswing updatedatabase
         java -Xms128m -Xmx512m -cp "myshelter.jar:/root/MyShelterAppliance/MyShelter/lib/*" myshelter.Main noswing $MEDIAPATH $BASEDATI /root/MyShelterAppliance/MyShelter/CustomLib eth0 >> $LOGFILE 2>&1
         MSG=$?
+        echo "0" > /root/BaseDati/etc/vpn/led/led2
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
         echo "MSG: $MSG" >> $LOGFILE
         RESTARTCOUNT=`expr $RESTARTCOUNT + 1`
