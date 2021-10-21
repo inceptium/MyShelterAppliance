@@ -5,9 +5,6 @@ MEDIAPATH=/root/BaseDati/srv/LCServer
 BASEDATI=/root/BaseDati
 cd /root/BaseDati
 rm myshelter_srv.log
-cd /root
-echo "update myshelter" >> $LOGFILE
-./reset_head_from_git.sh >> $LOGFILE
 cd /root/MyShelterAppliance/MyShelter/
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
@@ -42,6 +39,11 @@ do
         fi
 	echo "Send Mail Service Restart"
 	#ssmtp cpmatrix@mac.com < mail-riavvio.txt
+    cd /root
+    echo "update myshelter" >> $LOGFILE
+    ./reset_head_from_git.sh >> $LOGFILE
+    cd /root/MyShelterAppliance/MyShelter/
+ 
 done
 echo "Voluntary Kill at `date`" >> $LOGFILE
 exit
