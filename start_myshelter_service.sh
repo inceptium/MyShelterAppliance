@@ -4,6 +4,7 @@ LOGFILE=/root/BaseDati/myshelter_srv.log
 MEDIAPATH=/root/BaseDati/srv/LCServer
 BASEDATI=/root/BaseDati
 cd /root
+echo "update myshelter" >>$LOGFILE
 ./reset_head_from_git.sh >> $LOGFILE
 cd /root/BaseDati
 rm myshelter_srv.log
