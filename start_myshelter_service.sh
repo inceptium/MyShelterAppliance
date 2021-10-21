@@ -5,6 +5,7 @@ MEDIAPATH=/root/BaseDati/srv/LCServer
 BASEDATI=/root/BaseDati
 cd /root/BaseDati
 rm myshelter_srv.log
+/root/BaseDati/srv/LCServer/./sync_panel.sh
 cd /root/MyShelterAppliance/MyShelter/
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
