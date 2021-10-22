@@ -5,11 +5,11 @@ MEDIAPATH=/root/BaseDati/srv/LCServer
 BASEDATI=/root/BaseDati
 cd /root/BaseDati
 rm myshelter_srv.log
-/root/BaseDati/srv/LCServer/./sync_panel.sh
 cd /root/MyShelterAppliance/MyShelter/
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
 MSG=0
 RESTARTCOUNT=0
+wget https://myshelter.inceptium.it/logiche/LCimp_new.rsd /root/BaseDati/temp/
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
     cp /root/BaseDati/temp/LCimp_new.rsd /root/BaseDati/LCimp.rsd
