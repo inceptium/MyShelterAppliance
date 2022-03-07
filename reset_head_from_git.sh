@@ -1,4 +1,6 @@
 #!/bin/sh
+cd /root
+rm .git-credentials 
 cd /root/MyShelterAppliance
 git fetch --all
 git reset --hard origin/master
