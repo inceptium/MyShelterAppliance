@@ -21,4 +21,3 @@ systemctl start inceptiumdiscovery.service
 systemctl start myshelter.service
 systemctl start inceptiumservice.service
 echo "Process Complete" >> /root/process.log
-
