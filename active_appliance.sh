@@ -8,4 +8,4 @@ fi
 USER=$(echo -n $1 | base64)
 PASSWORD=$(echo -n $2 | base64)
 
-wget "http://localhost:8081/Ucommand=active_product?"$USER"::"$PASSWORD
+wget -q --output-document - "http://localhost:8081/Ucommand=active_product?"$USER"::"$PASSWORD
