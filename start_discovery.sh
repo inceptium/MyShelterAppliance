@@ -9,6 +9,7 @@ RESTARTCOUNT=0
 ip=$(hostname -I | awk '{print $1}')
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
+		ip=$(hostname -I | awk '{print $1}')
         java -Xms128m -Xmx256m -jar inceptiumdiscovery.jar $SERIALNO $ip >> $LOGFILE
 	MSG=$?
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
